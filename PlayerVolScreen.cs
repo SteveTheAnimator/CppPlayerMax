@@ -1,4 +1,4 @@
-﻿using ComputerPlusPlus;
+using ComputerPlusPlus;
 using ComputerPlusPlus.Tools;
 using GorillaExtensions;
 using GorillaNetworking;
@@ -7,13 +7,13 @@ using System;
 using System.Linq;
 using System.Text;
 
-namespace CppPlayerVolume
+namespace CppPlayerMax
 {
     public class PlayerVolScreen : IScreen
     {
-        public string Title => "PlayerVol";
+        public string Title => "PlayerMax";
 
-        public string Description => "Change player volumes. [W/S] to scroll.";
+        public string Description => "Change player max distance. [W/S] to scroll.";
 
         int index = 0;
 
