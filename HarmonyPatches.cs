@@ -1,8 +1,8 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using System;
 using System.Reflection;
 
-namespace CppPlayerVolume
+namespace CppPlayerMax
 {
     /// <summary>
     /// This class handles applying harmony patches to the game.
