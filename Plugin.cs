@@ -1,8 +1,8 @@
-﻿using BepInEx;
+using BepInEx;
 using System;
 using UnityEngine;
 using GorillaNetworking;
-using CppPlayerVolume.Tools;
+using CppPlayerMax.Tools;
 using Photon.Pun;
 using Photon.Realtime;
 using System.Collections.Generic;
@@ -12,10 +12,10 @@ using UnityEngine.UIElements;
 using GorillaExtensions;
 using UnityEngine.Pool;
 
-namespace CppPlayerVolume
+namespace CppPlayerMax
 {
 
-    [BepInPlugin("com.kylethescientist.gorillatag.cppplayervolume", "CppPlayerVolume", "1.0.0")]
+    [BepInPlugin("com.steve.gorillatag.cppmax", "CppPlayerMax", "1.0.0")]
     [BepInDependency("com.kylethescientist.gorillatag.computerplusplus")]
     public class Plugin : BaseUnityPlugin
     {
