@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using BepInEx.Logging;
 using Photon.Pun;
 
-namespace CppPlayerVolume.Tools
+namespace CppPlayerMax.Tools
 {
     public static class Logging
     {
