@@ -1,10 +1,10 @@
-﻿using BepInEx;
+using BepInEx;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace CppPlayerVolume
+namespace CppPlayerMax
 {
     public static class MetadataSerializer
     {
