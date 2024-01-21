@@ -1,4 +1,4 @@
-﻿using CppPlayerVolume.Tools;
+using CppPlayerMax.Tools;
 using HarmonyLib;
 using Photon.Pun;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace CppPlayerVolume
+namespace CppPlayerMax
 {
     public class RigWrapper : MonoBehaviour
     {
@@ -41,13 +41,18 @@ namespace CppPlayerVolume
                 photonView = rigTraverse.Field("photonView").GetValue<PhotonView>();
                 voiceAudio = rigTraverse.Field("voiceAudio").GetValue<AudioSource>();
                 userId = photonView.Owner.UserId;
-                if (MetadataSerializer.volumes.ContainsKey(userId))
-                    volume = MetadataSerializer.volumes[userId];
-                else
-                    volume = 9;
-                voiceAudio.volume = volume / 9f;
+
+                // Set spatial blend directly or use a default value if not found
+                float spatialBlend = 0.5f; // You can adjust this value as needed
+                voiceAudio.spatialBlend = spatialBlend;
+
+                // Set max distance directly or use a default value if not found
+                float maxDistance = 2f; // You can adjust this value as needed
+                voiceAudio.maxDistance = maxDistance;
+
                 invalid = false;
-            }catch (Exception e)
+            }
+            catch (Exception e)
             {
                 invalid = true;
                 //Logging.Exception(e);
